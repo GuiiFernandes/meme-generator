@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Project - Meme Generator</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 class="display-2">MEME GENERATOR</h1>
+    </header>
+    <form id="form" action="" method="get">
+      <div id="text-form" class="form-floating">
+        <input type="text" class="form-control" id="text-input" placeholder="Texto" maxlength="60">
+        <label for="text-input">Texto</label>
+      </div>
+      <div class="mb-3">
+        <label for="meme-insert" class="form-label">Foto</label>
+        <input class="form-control" type="file" accept="image/*" id="meme-insert">
+      </div>
+    </form>
+    <div id="meme-image-container">
+      <div id="meme-image" class="meme-1">
+        <p id="meme-text"></p>
+      </div>
+    </div>
+    <div id="button-container">
+      <button type="button" class="btn btn-danger" id="fire">
+        Fire
+        <img src="./images/icons8-hotjar-32.png" alt="Fire">
+      </button>
+      <button type="button" class="btn btn-primary" id="water">
+        Water
+        <img src="./images/icons8-wave-lines-50.png" alt="Water">
+      </button>
+      <button type="button" class="btn btn-success" id="earth">
+        Earth
+        <img src="./images/icons8-montanha-50.png" alt="Earth">
+      </button>
+    </div>
+    <div id="model-photos">
+      <h2 class="display-6">Modelos de Meme!</h2>
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>

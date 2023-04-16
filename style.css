@@ -1,0 +1,145 @@
+body {
+  height: 100vh;
+  background-image: url('./images/scattered-forcefields.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+#form {
+  max-width: 540px;
+  margin: auto;
+}
+
+#meme-image-container {
+  max-width: 540px;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  background-color: white;
+}
+
+#meme-image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 270px;
+  max-height: 540px;
+  background-color: white;
+  background-image: url('./images/card-image.svg');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: 10px 5px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+#meme-text , .model-text {
+  font-size: 30px;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  line-height: 1;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px black;
+  display: inline;
+}
+
+#button-container {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 160px;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 20px;
+}
+
+button img {
+  height: 30px;
+}
+
+#button-container button:nth-child( 1 ) {
+  background-color: red;
+  display: block;
+}
+
+#button-container button:nth-child( 2 ) {
+  background-color: blue;
+}
+
+#button-container button:nth-child( 3 ) {
+  background-color: green;
+}
+
+.display-6 {
+  width: 100%;
+  text-align: center;
+}
+
+#model-photos {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+#model-photos div {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  padding: 3px;
+  display: flex;
+  align-content: start;
+}
+
+#model-photos p {
+  font-size: 7px;
+  margin: 0;
+  text-shadow: 1px 1px 3px black;
+}
+
+.meme-1 {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.meme-2 {
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: right;
+}
+
+.meme-3 {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.meme-4 {
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+
+form #text-form {
+  margin-bottom: 8px;
+}
